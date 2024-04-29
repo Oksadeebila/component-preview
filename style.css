@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root {
+  --lime-green : hsl(163, 72%, 41%);
+  --brightRed : hsl(356, 69%, 56%);
+  --Facebook : hsl(208, 92%, 53%);
+  --Twitter: hsl(203, 89%, 53%);
+  --Instagram : hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --YouTube :  hsl(348, 97%, 39%);
+
+/* Dark Theme Toggle */
+  --toggleDark : hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+
+/* Light Theme Toggle */
+  --toggleLight : hsl(163, 72%, 41%);
+
+  /* Dark theme*/
+  --backgroundd :  hsl(230, 17%, 14%);
+  --topBackground :  hsl(232, 19%, 15%);
+  --CardBg :  hsl(228, 28%, 20%);
+  --text :  hsl(228, 34%, 66%);
+  --text2 :  hsl(0, 0%, 100%);
+  --background :  hsl(230, 17%, 14%);
+
+  /* Light Theme */
+
+--backgroundLight :  hsl(0, 0%, 100%);
+--topBackgroundLight :  hsl(225, 100%, 98%);
+--cardbgLight : hsl(227, 47%, 96%);
+--text2light :   hsl(230, 17%, 14%);
+--textlight :  hsl(228, 12%, 44%);
+
+/* font weight */
+
+--fontReguler : 400;
+--fontLarge : 700;
+
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+  background-color: var(--background);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  margin: 1.5rem;
+}
+
+.tittle-dashboard h2 {
+  color: var(--text2);
+  margin-bottom: 5px;
+}
+
+.tittle-dashboard p {
+  color: var(--text);
+  font-weight: var(--fontLarge);
+  margin-top: 0;
+}
+.tittle-dashboard {
+  display: flex;
+  flex-direction: column;
+}
+hr {
+  background-color: var(--text);
+}
+.dark-mode {
+  padding-top: 10px;
+  padding-bottom: 1.7rem;
+  display : flex;
+  align-items: center;
+  gap: 10px;
+}
+.dark-mode p {
+  color: var(--text);
+  font-weight: var(--fontLarge);
+  margin-top: 0;
+}
+.card{
+  background-color: var(--CardBg) ;
+  padding: 1.2rem;
+  border-top: 5px solid var(--Facebook);
+ border-radius: 9px;
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: .6rem;
+  margin-bottom: .7rem;
+  margin-top: .7rem;
+}
+
+.logo-name img, .top-card-content img {
+  height: 100%;
+}
+.top-card-content,
+.logo-name p {
+  color: var(--text);
+  font-weight: 700;
+  font-size: 14px;
+}
+.top-card-content {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container-main {
+  display: grid;
+  row-gap: 1.9rem;
+}
+
+.container-main h1 {
+  color: var(--text2);
+  font-weight: 700;
+  font-size: 55px;
+  margin: 0;
+}
+
+.container-main p {
+  color: var(--text);
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.updown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  margin-top: 1.5rem;
+  margin-bottom: .7;
+}
+
+.updown img,
+ .bottom-card-content {
+  height: 10px;
+}
+
+.updown p,
+.bottom-left p {
+  font-size: 14px;
+  letter-spacing: 0;
+  font-weight: var(--fontLarge);
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.updown .greenish {
+  color: var( --toggleLight);
+}
+
+.updown .redish {
+  color : hsl(356, 69%, 56%);
+}
+
+.overview {
+  color: var(--text2);
+  font-size: 26px;
+  font-weight: var(--fontLarge);
+  font-family: helvetica;
+  margin-top: 2.5rem;
+}
+
+.top-card-preview {
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-card-preview  img {
+  height: 50%;
+}
+
+.bottow-card-preview  {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+.bottow-card-preview h1{
+  color: var(--text2);
+  font-size: 26px;
+}
+
+.bottow-card-preview p {
+  color : var(--lime-green);
+}
+
+.right-bottom-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+ 
+}
+
+
+.container-overview {
+ display: grid;
+ gap: 20px;
+}
+
+.card-content {
+  background-color: var(--CardBg) ;
+  padding : 20px 20px 40px 20px ;
+  border-top: 5px solid var(--Facebook);
+ border-radius: 9px;
+ display: flex;
+ flex-direction: column;
+ gap: 2rem;
+}
+
+.top-card-content, 
+.bottom-card-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-card-content img {
+  height: 60%;
+}
+
+.page-view {
+  color: var(--text2);
+  font-size: 2.5rem;
+}
+
+
+.bottom-card-content .text-red {
+  color: var(--brightRed);
+
+}
+
+.bottom-left {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.bottom-left  img {
+  height: 9px;
+  width: 10px;
+}
+
+.text-green {
+  color: var( --toggleLight);
+}
+#dark-mode button {
+  width : 75px;
+  height: 40px;
+  padding: 7px 14px;
+  border-radius: 43px;
+  border: none;
+  background: rgb(18,226,73);
+  background: linear-gradient(90deg, rgb(9, 156, 136) 0%, rgb(3, 243, 207) 41%, rgb(2, 182, 107) 100%);
+  position: relative;
+}
+
+.circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background-color: rgb(20, 16, 16);
+  position: relative;
+  z-index: 1;
+  top : -5px;
+  right: 10px;
+}
+
+ /* light mode  */
+
+#dark-mode .circleLight {
+  background-color: rgb(236, 236, 236);
+  left: 20px;
+}
+ .bodyDark {
+  background-color: var(--backgroundLight );
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+
+}
+.attribution a {
+  color: var(--toggleLight);
+}
+
+hr {
+  display: none;
+}
+
+.attribution a:hover {
+  color:  rgba(29, 180, 137, .1);
+}
+.tittle-dashboard .social-dashboard__dark {
+  color: var(--text2light );
+}
+
+.card__dark {
+  background-color: hsl(227, 47%, 96%);
+  
+}
+
+.card .paragrafDark{
+color:  hsl(230, 17%, 14%);
+}
+
+.paragrafDark {
+  color:  hsl(230, 17%, 14%);
+
+}
+/* light mode end */
+
+
+/* media query */
+
+@media (max-width : 1440px) and (min-width : 1244px) {
+
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 6rem;
+  }
+
+  .container-main {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 1rem;
+  }
+
+  .container-overview {
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-template-rows: auto auto;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  hr {
+    color: var(--CardBg);
+  }
+
+  .dark-mode {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+}
+
+@media (max-width : 1244px) and (min-width : 376px) {
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4rem;
+  }
+
+  .container-main {
+    display: grid;
+    grid-template-columns: auto auto ;
+    column-gap: 1rem;
+  }
+
+  .container-overview {
+    display: grid;
+    grid-template-columns: auto auto auto  ;
+  }
+}
+
+@media (max-width : 864px) and (min-width : 688px) {
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4rem;
+  }
+
+  .container-main {
+    display: grid;
+    grid-template-columns: auto auto ;
+    column-gap: 1rem;
+  }
+
+  .container-overview {
+    display: grid;
+    grid-template-columns: auto auto  ;
+  }
+}
+
+@media (max-width : 687px) {
+
+  .container-main {
+    display: grid;
+    grid-template-columns: auto ;
+    column-gap: 1rem;
+  }
+
+  .container-overview {
+    display: grid;
+    grid-template-columns: auto  ;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 .5rem;
+  }
+
+ 
+  
+}
+
+/* end of media query */
+
+

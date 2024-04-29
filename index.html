@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+  <link  rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body id="body">
+
+  <main class="wrapper" id="main">
+      <header>
+        <div class="tittle-dashboard">
+          <h2 id="social-dashboard">Social Media Dashboard</h2>
+          <P>Total Followers: 23,004</P>
+        </div>
+        <hr>
+        <div id="dark-mode">
+         <button onclick="darkMode()">
+          <div class="circle" id="button"></div>
+        </button>
+        </div>
+      </header>
+
+      <content id="konten">
+        <section class="container-main">
+          <div class="card" id="cardId">
+            <div class="logo-name">
+              <img src="./images/icon-facebook.svg" alt="facebook" width="50%">
+              <p class="p-dark">@nathanf</p>
+            </div>
+            <h1 class="followers-amount p-dark" id="followerID">1987</h1>
+            <p class="p-dark">FOLLOWERS</p>
+            <div class="updown">
+              <img src="./images/icon-up.svg" alt="icon-up" width="10%" height="15%">
+              <p class="greenish">12 Today</p>
+            </div>
+          </div>
+          <div class="card" id="cardId">
+            <div class="logo-name">
+              <img src="./images/icon-twitter.svg" alt="facebook" width="20%">
+              <p class="p-dark">@nathanf</p>
+            </div>
+            <h1 class="followers-amount p-dark" id="followerID">1044</h1>
+            <p class="p-dark">FOLLOWERS</p>
+            <div class="updown">
+              <img src="./images/icon-up.svg" alt="icon-up" width="10%" height="15%">
+              <p class="greenish">99 Today</p>
+            </div>
+          </div>
+          <div class="card" id="cardId">
+            <div class="logo-name">
+              <img src="./images/icon-instagram.svg" alt="facebook" width="20%">
+              <p >@realnathanf</p>
+            </div>
+            <h1 class="followers-amount p-dark" id="followerID">11k</h1>
+            <p class="p-dark">FOLLOWERS</p>
+            <div class="updown">
+              <img src="./images/icon-up.svg" alt="icon-up" width="10%" height="15%">
+              <p class="greenish">1099 Today</p>
+            </div>
+          </div>
+          <div class="card" id="cardId">
+            <div class="logo-name">
+              <img src="./images/icon-youtube.svg" alt="facebook" width="20%">
+              <p class="p-dark">Nathan F.</p>
+            </div>
+            <h1 class="followers-amount p-dark" id="followerID">8239</h1>
+            <p class="p-dark">FOLLOWERS</p>
+            <div class="updown">
+              <img src="./images/icon-down.svg" alt="icon-up" width="10%" height="15%">
+              <p class="redish">144 Today</p>
+            </div>
+          </div>
+        </section>
+
+        <p class="overview p-dark"  id="social-dashboard ">Overview - Today</p>
+
+        <div class="container-overview card-overview">
+          <div class="card-content">
+            <div class="top-card-content">
+              <p class="p-dark">Page views</p>
+              <img src="./images/icon-facebook.svg" alt="icon-facebook">
+            </div>
+            <div class="bottom-card-content">
+              <h1 class="page-view p-dark">87</h1>
+              <div class="bottom-left">
+                <img src="./images/icon-up.svg" alt="icon-up">
+                <p class=" text-green">3%</p>
+              </div>
+             
+            </div>
+          </div>
+
+          <div class="card-content">
+            <div class="top-card-content">
+              <p class="p-dark">Likes</p>
+              <img src="./images/icon-facebook.svg" alt="icon-facebook">
+            </div>
+            <div class="bottom-card-content">
+              <h1 class="page-view p-dark">52</h1>
+              <div class="bottom-left">
+                <img src="./images/icon-down.svg" alt="icon-down">
+                <p class=" text-red">2%</p>
+              </div>
+             
+            </div>
+          </div>
+          
+          <div class="card-content">
+            <div class="top-card-content">
+              <p class="p-dark">Likes</p>
+              <img src="./images/icon-instagram.svg" alt="icon-instagram">
+            </div>
+            <div class="bottom-card-content">
+              <h1 class="page-view p-dark">5462</h1>
+              <div class="bottom-left">
+                <img src="./images/icon-up.svg" alt="icon-up">
+                <p class=" text-green">2257%</p>
+              </div>
+             
+            </div>
+          </div>
+
+          <div class="card-content">
+            <div class="top-card-content">
+              <p class="p-dark">Profile views</p>
+              <img src="./images/icon-instagram.svg" alt="icon-instagram">
+            </div>
+            <div class="bottom-card-content">
+              <h1 class="page-view p-dark">52k</h1>
+              <div class="bottom-left">
+                <img src="./images/icon-up.svg" alt="icon-up">
+                <p class=" text-green">1378%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-content">
+            <div class="top-card-content">
+              <p class="p-dark">Retweets</p>
+              <img src="./images/icon-twitter.svg" alt="icon-twitter">
+            </div>
+            <div class="bottom-card-content">
+              <h1 class="page-view p-dark">117</h1>
+              <div class="bottom-left">
+                <img src="./images/icon-up.svg" alt="icon-up">
+                <p class=" text-green">303%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-content">
+            <div class="top-card-content">
+              <p class="p-dark">Likes</p>
+              <img src="./images/icon-twitter.svg" alt="icon-twitter">
+            </div>
+            <div class="bottom-card-content">
+              <h1 class="page-view p-dark">507</h1>
+              <div class="bottom-left">
+                <img src="./images/icon-up.svg" alt="icon-up">
+                <p class=" text-green">553%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-content">
+            <div class="top-card-content">
+              <p class="p-dark">Likes</p>
+              <img src="./images/icon-youtube.svg" alt="icon-youtube">
+            </div>
+            <div class="bottom-card-content">
+              <h1 class="page-view p-dark">107</h1>
+              <div class="bottom-left">
+                <img src="./images/icon-down.svg" alt="icon-down">
+                <p class=" text-red">19%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-content">
+            <div class="top-card-content">
+              <p class="p-dark">Total views</p>
+              <img src="./images/icon-youtube.svg" alt="icon-youtube">
+            </div>
+            <div class="bottom-card-content">
+              <h1 class="page-view p-dark">1407</h1>
+              <div class="bottom-left">
+                <img src="./images/icon-down.svg" alt="icon-down">
+                <p class="text-red">1378%</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+      </content>
+  </main>
+
+ 
+  <div class="attribution">
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
